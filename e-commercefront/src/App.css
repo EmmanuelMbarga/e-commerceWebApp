@@ -1,0 +1,4 @@
+.ErrorName,.ErrorPrenom,.ErrorEmail,.Errorpassword,.ErrorConfirmpassword,.Errorchek{
+  color: red;
+  font-size: 13px;
+}
