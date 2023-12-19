@@ -25,7 +25,7 @@ const Authentification=()=>{
 
     return (
       <div>
-        <div className="border border-blue-400 p-5 flex items-start rounded-lg mt-12  hover:shadow hover:shadow-blue-700">
+        <div className="border border-blue-400 p-5 flex items-start rounded-lg mt-12  hover:shadow hover:shadow-blue-700 hover:transition-[0.8s] ">
           <ul className="mr-10">
             <li
               onClick={handleBlocAuth}

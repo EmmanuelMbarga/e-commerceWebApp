@@ -2,16 +2,50 @@
 @tailwind components;
 @tailwind utilities;
 
+/* style navbar connecte relative relative */
+.navcontainer{
+  @apply flex relative z-50 
+}
+.container{
+  @apply fixed flex items-center justify-between border-b-2 w-[100%] border-yellow-500 shadow shadow-yellow-800 px-2 bg-neutral-50
+}
+.imagelogo{
+  @apply w-[80px] portable:w-10
+}
+.titrelogo{
+  @apply text-lg text-blue-900 portable:text-sm
+}
+.containerlist{
+ @apply flex -ml-36 portable:-ml-2
+}
+.listcontainer{
+  @apply mr-4 cursor-pointer
+}
+.souslistcontainer{
+  @apply absolute left-[70rem] w-60 text-center 
+}
+.souslist{
+  @apply  bg-white  mt-[30px] shadow-md
+}
+.souslistcontainerHelp{
+  @apply absolute left-[70rem]
+}
+.souslistHelp{
+  @apply  bg-sky-600 mt-7 
+}
+
+
 /* style body */
 body{
   @apply font-serif
 }
+
 /* style des composants de connexion et de deconnexion */
 .Btnauthentification {
-  @apply border border-blue-400 rounded p-1 text-blue-400 mt-3 cursor-pointer hover:bg-blue-400 hover:text-white hover:border hover:border-neutral-400;
+  @apply border border-blue-400 rounded p-1 text-blue-400 mt-3 cursor-pointer hover:bg-blue-400 hover:text-white hover:border hover:border-neutral-400 hover:transition-[0.8s];
 }
 .Btnconnexion {
-  @apply border border-blue-400 mt-9 ml-[100px] text-blue-400 p-1 rounded cursor-pointer  hover:bg-blue-400 hover:text-white hover:border hover:border-neutral-400;
+  @apply border border-blue-400 mt-9 ml-[100px] text-blue-400 p-1 rounded cursor-pointer  hover:bg-blue-400 hover:text-white hover:border hover:border-neutral-400 hover:transition-[0.8s];
 }
 .formcontainer{
    @apply border border-orange-300 w-[300px] px-4 text-sm rounded
@@ -19,6 +53,7 @@ body{
 .titleform{
  @apply text-center text-2xl text-orange-500
 }
+
 /* style caroussel */
 .thumbs.animated{
   @apply hidden
@@ -27,10 +62,10 @@ body{
   @apply h-[692px] 
 }
 .presentationcarousel{
-  @apply text-5xl text-left ml-14 opacity-100
+  @apply text-5xl text-left ml-14 opacity-100 portable:text-sm portable:m-4 portable:text-white
 }
 .presentationcarousel2{
-  @apply text-xl text-left ml-24
+  @apply text-xl text-left ml-24 portable:text-sm portable:ml-10
 }
 
 .presentationcarousel3{
@@ -42,11 +77,16 @@ body{
   @apply mt-[3%] mb-[6%] mx-8 grid grid-cols-3 gap-3
 }
 .IconAffichecontainer{
-  @apply w-96 rounded rounded-t-lg bg-blue-900 text-neutral-50
+  @apply w-96 rounded rounded-t-lg text-neutral-400 shadow hover:shadow-yellow-900 hover:transition-[0.1s] hover:text-black
 }
 .IconAfficheImg{
   @apply h-[360px] rounded-t-lg w-[400px] object-cover hover:object-cover hover:w-[360] hover:cursor-pointer
 }
 .IconAfficheElements{
-  @apply  w-[10%x] p-3 text-xl text-center
+  @apply  w-[10%x] p-3 text-xl text-center 
+}
+
+/* style pub */
+.control-dots{
+  @apply hidden
 }

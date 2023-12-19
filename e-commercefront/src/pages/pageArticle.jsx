@@ -1,9 +1,10 @@
 import React from "react"
+import Navarticles from "../components/pageArticles/navarvticles"
 
 const CommerceApp=()=>{
     return(
-        <div className="mt-52">
-            <h1>page de commerce</h1>
+        <div className="my-20 w-[100%]">
+            <Navarticles/>
         </div>
     )
 }

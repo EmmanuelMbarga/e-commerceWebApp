@@ -23,7 +23,7 @@ const DeconnexionApp=()=>{
 
     return(
         <div className="cursor-pointer">
-            <h1 onClick={handledeconnect}>deconnexion</h1>
+            <h1 onClick={handledeconnect} className="portable:text-[9px]">deconnexion</h1>
         </div>
     )
 }

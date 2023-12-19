@@ -1,4 +1,32 @@
+/* style des erreur d'authentification en css classique */
 .ErrorName,.ErrorPrenom,.ErrorEmail,.Errorpassword,.ErrorConfirmpassword,.Errorchek{
   color: red;
   font-size: 13px;
 }
+
+/* style de la navbar en css classique lorsque un visiteur est connecté */
+ .navcontainer .containerlist .listcontainer .souslistcontainer  li{
+  display: none;
+
+}
+.navcontainer .containerlist .listcontainer:hover .souslistcontainer li{
+  display: block;
+} 
+
+.navcontainer .containerlist .listcontainer .souslistcontainerHelp  li{
+  display: none;
+
+}
+.navcontainer .containerlist .listcontainer:hover .souslistcontainerHelp li{
+  display: block;
+} 
+
+/* style navbarresponsive */
+/* @media screen and (min-width:200px) and (max-width:700px) {
+    .imagelogo{
+      width: 20px;
+    }
+    .titrelogo{
+      font-size: 8px;
+    }
+} */

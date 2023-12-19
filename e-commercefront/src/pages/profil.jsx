@@ -3,6 +3,7 @@ import logo from "../images/imgconnexion/paiement-par-technologie-simple-sans-fi
 import { UtilisateurContext } from "../context/utilisateur"
 import CommerceApp from "./pageArticle"
 import Authentification from "../containers/authentification"
+import FouterApp from "../Fouter/fouter"
 
 
 
@@ -19,9 +20,9 @@ const Profilpage=()=>{
 
         </>
         ) : (
-          <div className="flex mt-20 h-[700px]">
+          <div className="flex my-12 h-[700px]">
                     <div>
-                        <img src={logo} className="w-[500px] mr-56 rounded" />
+                        <img src={logo} className="w-[500px] mr-56 " />
                     </div>
                     <div>
                         <Authentification/>
@@ -29,6 +30,9 @@ const Profilpage=()=>{
             </div>
          )
         }
+
+
+        <FouterApp/>
       </>
     );
 } 
